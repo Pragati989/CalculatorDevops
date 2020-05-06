@@ -4,6 +4,7 @@ public class Calculator {
 
     public static int add(int a,int b) { return (a+b); }
     public static int diff(int a,int b) { return (a-b); }
+    public static int multiply(int a,int b) { return (a*b); }
 
     public static void main(String args[])
     {
@@ -36,6 +37,13 @@ public class Calculator {
                             System.out.println("Enter the second number");
                             value2=sc.nextInt();
                             result=diff(value1,value2);
+                            System.out.println(result);
+                            break;
+                    case 3: System.out.println("Enter the first number");
+                            value1=sc.nextInt();
+                            System.out.println("Enter the second number");
+                            value2=sc.nextInt();
+                            result=multiply(value1,value2);
                             System.out.println(result);
                             break;
                     case 5: System.out.println("Terminating...PLease wait!!");
